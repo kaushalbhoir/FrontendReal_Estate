@@ -1,7 +1,7 @@
-@import "./responisive.scss";
+@import "../../responisive.scss";
 
 .layout{
-    background-color:rebeccapurple;
+    // background-color:rebeccapurple;
     height:100vh;
     max-width:1366px;
     margin-left:auto;
@@ -15,19 +15,21 @@
 
 @include lg{
    
-    background-color: rgb(247,210,196);
+    // background-color: rgb(247,210,196);
     max-width:1288px;
 }
 @include md{
-    background-color:rgb(186,203,234);
+    // background-color:rgb(186,203,234);
     max-width:768px;
 }
 @include sm{
-    background-color: rgb(239,200,200);
+    // background-color: rgb(239,200,200);
     max-width:640px;
 }  
   .content{
-    background-color: rebeccapurple;
-    flex:1;
+    // background-color: rgb(108, 26, 26);
+    //flex:1;
+    height:calc(100vh - 100px);
+
   }
 }

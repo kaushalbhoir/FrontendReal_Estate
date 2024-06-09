@@ -2,6 +2,8 @@
 
 .searchBar{
     .type{
+
+       
         button{
             padding: 16px 36px;
             border: 1px solid #999;
@@ -22,6 +24,8 @@
             border-top-left-radius:5px;
             border-right: none;;
          }
+
+         
          &:last-child{
             border-top-left-radius:5px;
             border-left: none;;
@@ -36,6 +40,11 @@
         height: 36px;
         gap:5px;
 
+         @include sm{
+             flex-direction:column ;
+             border: none;
+         }
+
         input{
             border: none;
             padding: 0px 0px;
@@ -48,14 +57,34 @@
                     width:140px;
                 }
             }
-            
+            @include md{
+                padding: 0px 5px;
+                width:auto;
+                &:nth-child(2),
+                &:nth-childe(3){
+                    width:auto;
+                }
+            }
+
+             @include sm{
+                width:auto;
+              padding:20px;
+              &:nth-child(2),
+              &:nth-childe(3){
+                  width:auto;
+              }
+              border:1px  solid #999;
+
+             }
         }
          button{
             border:none;
             cursor:pointer;
             background-color: #fece51;
             flex:1;
-
+          @include sm{
+            padding:8px;
+          }
              img{
                 width:24px;
 
