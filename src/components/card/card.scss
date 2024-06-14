@@ -1,6 +1,7 @@
 .card{
     display:flex;
     gap: 20px;
+    padding-bottom: 50px;
    
    .imageContainer{
       flex:2;
@@ -95,12 +96,14 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            padding-bottom: 50px;
+           
 
             &:hover{
                  background-color: lightgray; 
             }
           }
+
+
        }
    }
 
