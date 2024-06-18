@@ -1,10 +1,27 @@
+ @import "../../responisive.scss";
+
 .singlePage {
     display: flex;
     height: 100%;
+
+    @include md{
+      flex-direction: column;
+      overflow: scroll;
+    }
   
     .details {
       flex: 3;
+      height:100%;
+      overflow-y: scroll;
   
+      @include md{
+        flex-direction: column;
+        flex:none;
+        overflow-y: hidden;
+        height:max-content;
+
+      }
+
       .wrapper {
         padding-right: 50px;
   
@@ -90,6 +107,14 @@
     .features {
       flex: 2;
       background-color: #fcf5f3;
+      height:100%;
+      overflow-y: scroll;
+      
+      @include md{
+        flex:none;
+        height: max-content;
+        overflow-y: hidden;
+      }
   
       .wrapper {
         padding: 0px 20px;
@@ -144,7 +169,9 @@
        
         .sizes{
           display:flex;
-         
+           @include lg{
+            font-size: 12px ;
+           }
           justify-content: space-between;
           gap: 10px;
         
@@ -161,8 +188,28 @@
 
          .mapContainer{
            width: 100%;
-           height: 200%;
+           height: 200px;
            
+
+         }
+         .buttons{
+          display:flex;
+          justify-content: space-between;
+
+           button{
+
+             padding:20px;
+             display:flex;
+             align-items:center;
+             gap:5px;
+             background-color:white;
+             border:1 px solid yellowgreen;
+             cursor:pointer;
+             img{
+               width:16px;
+               height:16px;
+             }
+           }
 
          }
       }
